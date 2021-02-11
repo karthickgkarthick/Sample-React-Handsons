@@ -1,0 +1,8 @@
+.mydiv{
+    text-align: center;
+    color: green;
+}
+table, th, td {
+    border: 1px solid black;
+    margin-left: 43%;
+  }
