@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Form } from 'react-bootstrap'
+import { Card, Form, Navbar } from 'react-bootstrap'
 
 class Register extends Component {
 
@@ -63,26 +63,36 @@ handleSubmit=(event)=>{
     render(){
     return (
         <div>
+            <Navbar className="row justify-content-center" style={{backgroundColor:'black',color:'red'}}><h1>Register Here!!!</h1></Navbar>
             
-            <div className="container">
-            <h1 style={{color:'red'}}>Register Here!!!</h1>
+            <div className="container" style={{marginTop:"10px"}}>
+                <div className="row justify-content-center">
+                    <div className="col-md-5">
+                    
             <Form onSubmit={this.handleSubmit}>
                 <Form.Group>
                     <Form.Label>Name</Form.Label>
                     <Form.Control type="text" name="fullName" onChange={this.handleChange} />
+                    <span style={{color:'red'}}>{this.state.errors.fullName}</span>
                 </Form.Group>
                 <Form.Group>
                      <Form.Label>Email</Form.Label>
                     <Form.Control type="email" name="email" onChange={this.handleChange} />
+                    <span style={{color:'red'}}>{this.state.errors.email}</span>
                 </Form.Group>
                 <Form.Group>
                      <Form.Label>Password</Form.Label>
                     <Form.Control type="password" name="password" onChange={this.handleChange} />
+                    <span style={{color:'red'}}>{this.state.errors.password}</span>
                 </Form.Group>
                 <button type="submit" className="btn btn-secondary">Submit</button>
 
             </Form>
+            
             </div>
+            </div>
+            </div>
+            
         </div>
     )
     }
