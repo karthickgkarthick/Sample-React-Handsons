@@ -3,7 +3,8 @@ import React, { Component } from 'react'
 export class GetUser extends Component {
   
 state={
-    person:[],
+    pic:"",
+    name:[],
     loading:null
 }
 
@@ -13,14 +14,15 @@ state={
            const url="https://api.randomuser.me/"; 
            const response=await fetch(url);
            const data=await response.json();
-           this.setState({person:data.results[0].picture.large,loading:false});
+           this.setState({name:data.results[0].name,loading:false});
+           this.setState({pic:data.results[0].picture.large,loading:false});
            console.log(data.results[0]);
     }
     render(){
-       const s=this.state.person
+       const s=this.state.pic;
     return (
         <div>
-           <h1>Mr Donato Nunes</h1>
+           <h1>{this.state.name.title} {this.state.name.first} {this.state.name.last}</h1>
            <img src={s}/>
     
         </div>
