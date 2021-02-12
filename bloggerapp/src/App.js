@@ -42,8 +42,9 @@ function App() {
   )
   return (
     <div className="App">
+      <h1 style={{backgroundColor:'black',color:'red',textAlign:'center',marginTop:0}}>Blogger App!!</h1>
    <div>
-     <div className="grid-container">
+     <div className="grp">
        <div className="cd">
          <h1>Course Details</h1>
          {coursedet}

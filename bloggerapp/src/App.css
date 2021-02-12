@@ -1,24 +1,24 @@
-.grid-container{
+
+.grp{
   display: grid;
   grid-template-columns:300px 300px 300px ;
   column-gap: 2rem;
-
-
-
+  justify-content: center;
+  margin-top: 5%;
 }
 .cd{
-  color: red;
+  color: rgb(0, 26, 255);
   border-left: 3px solid black;
   margin-left: 10%;
  
 }
 .bd{
-  color:forestgreen;
+  color:rgb(97, 34, 139);
   border-left: 3px solid black;
   margin-right: 25%;
 }
 .bld{
-  color:blue;
+  color:black;
   border-left: 3px solid black;
   margin-right: 25%;
 }
