@@ -1,9 +1,26 @@
 .grid-container{
   display: grid;
-  grid-template-columns: auto auto auto ;
-padding: 10px;
+  grid-template-columns:300px 300px 300px ;
+  column-gap: 2rem;
 
 
+
+}
+.cd{
+  color: red;
+  border-left: 3px solid black;
+  margin-left: 10%;
+ 
+}
+.bd{
+  color:forestgreen;
+  border-left: 3px solid black;
+  margin-right: 25%;
+}
+.bld{
+  color:blue;
+  border-left: 3px solid black;
+  margin-right: 25%;
 }
 @media (max-width:500px){
   .grid-container{

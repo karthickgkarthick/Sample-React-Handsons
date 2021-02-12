@@ -44,15 +44,15 @@ function App() {
     <div className="App">
    <div>
      <div className="grid-container">
-       <div className="st2">
+       <div className="cd">
          <h1>Course Details</h1>
          {coursedet}
        </div>
-       <div className="v1">
+       <div className="bd">
          <h1>Book Details</h1>
          {bookdet}
        </div>
-       <div className="mystyle1">
+       <div className="bld">
          <h1>blog Details</h1>
          {blogdet}
        </div>
