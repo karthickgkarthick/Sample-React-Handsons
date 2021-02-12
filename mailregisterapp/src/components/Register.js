@@ -38,6 +38,9 @@ state={
      validateForm = (errors) => {
         let valid = true;
         Object.values(errors).forEach(val => val.length > 0 && (valid = false));
+        if(this.state.fullName==null || this.state.email==null || this.state.password==null){
+            valid=false;
+        }
         return valid;
       };
 handleSubmit=(event)=>{
