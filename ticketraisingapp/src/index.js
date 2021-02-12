@@ -4,7 +4,8 @@ import './index.css';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import reportWebVitals from './reportWebVitals';
-import ComplaintRegister from './ComplaintRegister';
+import ComplaintRegister from './components/ComplaintRegister';
+
 
 ReactDOM.render(
  <ComplaintRegister/>,

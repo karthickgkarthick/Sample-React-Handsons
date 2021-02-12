@@ -41,10 +41,10 @@ handleComplaint=(event)=>{
             </tr>
             <tr>
                 <td>Complaint:</td>
-                <td><Form.Control type="text"   name="complaint" onChange={this.handleComplaint}/></td>
+                <td><textarea className="form-control"   name="complaint" onChange={this.handleComplaint}/></td>
             </tr>
-        </table>
-        <Button type="submit" className="btn btn-primary">submit</Button>
+        </table><br/>
+        <Button type="submit" className="btn btn-success" style={{marginLeft:"140px"}}>submit</Button>
 
     </Form>
     </Container>
@@ -54,7 +54,7 @@ handleComplaint=(event)=>{
       <div>
         
            <Navbar bg="light" expand="lg">
-  <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+  <Navbar.Brand href="#home" style={{color:'red'}}>Register your complaints here!!!</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto">
@@ -76,7 +76,7 @@ handleComplaint=(event)=>{
 </Navbar>
 
 <div className="ComplaintRegister">
-            <h1>Register your complaints here!!!</h1>
+            
             {form}
         </div>
          </div>
