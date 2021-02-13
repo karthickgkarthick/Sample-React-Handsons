@@ -1,0 +1,17 @@
+body{
+    font-family: sans-serif;
+}
+table{
+    background-color: #e8dcff;
+    
+}
+input{
+    background-color: #feffb0;
+    font-weight: bold;
+    text-align: right;
+
+}
+b{
+    color: #174C68;
+    font-size: 18px;
+}
