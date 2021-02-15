@@ -1,0 +1,19 @@
+<table>
+    <thead>
+        <th>id</th>
+        <th>email</th>
+        <th>first_name</th>
+        <th>last_name</th>
+        <th>avatar</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of getUserdata">
+            <td>{{item.id}}</td>
+            <td>{{item.email}}</td>
+            <td>{{item.first_name}}</td>
+            <td>{{item.last_name}}</td>
+            <td>{{item.avatar}}</td>
+        </tr>
+    </tbody>
+</table>
+<button (click)="check()">check</button>
